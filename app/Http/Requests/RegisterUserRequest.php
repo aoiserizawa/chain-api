@@ -11,7 +11,7 @@ class RegisterUserRequest extends Request {
 	 */
 	public function authorize()
 	{
-		return false;
+		return true;
 	}
 
 	/**
@@ -26,5 +26,6 @@ class RegisterUserRequest extends Request {
 			'password' => 'required|min:6',
 		];
 	}
+
 
 }

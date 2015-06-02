@@ -19,7 +19,7 @@ Route::group(['prefix' => 'api/v1'], function()
 
 	Route::resource('user', 'AuthController');
 
-	Route::get('user/register/{email}/{password}', 'AuthController@register');
+	Route::post('user/register/', 'AuthController@registration');
 });
 
 
